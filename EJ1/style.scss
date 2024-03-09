@@ -1,0 +1,72 @@
+@for $i from 1 through 3 {
+  .container-#{$i} {
+    display: flex;
+    flex-wrap: wrap;
+
+    $base-color: null;
+
+    @if $i == 1 {
+      $base-color: #f44336;
+    } @else if $i == 2 {
+      $base-color: #3f51b5;
+    } @else if $i == 3 {
+      $base-color: #4caf50;
+    }
+
+    > .box {
+      $darken-4: darken($base-color, 20%);
+      $darken-3: darken($base-color, 15%);
+      $darken-2: darken($base-color, 10%);
+      $darken-1: darken($base-color, 5%);
+
+      $lighten-1: lighten($base-color, 5%);
+      $lighten-2: lighten($base-color, 10%);
+      $lighten-3: lighten($base-color, 15%);
+      $lighten-4: lighten($base-color, 20%);
+
+      background-color: $base-color;
+      padding: 2.5rem 0.5rem;
+      border-radius: 8px;
+      margin: 3px;
+      width: auto;
+      height: auto;
+      text-align: center;
+      font-size: 20px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+
+      color: complement($base-color);
+
+      &.darken-4 {
+        background-color: $darken-4;
+      }
+      &.darken-3 {
+        background-color: $darken-3;
+      }
+      &.darken-2 {
+        background-color: $darken-2;
+      }
+      &.darken-1 {
+        background-color: $darken-1;
+      }
+      &.base-color {
+        background-color: $base-color;
+        color: white;
+        padding: 2.5rem 1.2rem; // Mayor padding para .box con clase base-color
+      }
+      &.lighten-1 {
+        background-color: $lighten-1;
+      }
+      &.lighten-2 {
+        background-color: $lighten-2;
+      }
+      &.lighten-3 {
+        background-color: $lighten-3;
+      }
+      &.lighten-4 {
+        background-color: $lighten-4;
+      }
+    }
+  }
+}
