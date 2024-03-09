@@ -1,0 +1,43 @@
+body {
+  padding: 100px;
+}
+.box-group p {
+  margin: 10px;
+  font-family: cursive;
+}
+
+.box {
+  color: black;
+  padding: 1em;
+  text-align: start;
+  height: 50px;
+  width: 75px;
+  border: 1px solid #ccc;
+}
+
+.base {
+  background-color: #fe0000;
+}
+
+.important {
+  background-color: #650000;
+}
+
+.warning {
+  background-color: #ffbfcc;
+}
+
+.principal-font {
+  font-size: 18px;
+}
+
+.secondary-font {
+  font-size: 16px;
+  font-family: "Comic Sans MS", monospace;
+}
+.shadow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -8px 8px 10px black;
+}
