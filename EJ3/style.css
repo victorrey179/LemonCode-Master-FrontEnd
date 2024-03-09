@@ -1,0 +1,53 @@
+/* Base styles for the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #006a7b;
+  color: white;
+  align-items: stretch;
+}
+
+.title {
+  font-size: 1.2em;
+  margin-bottom: 1em; /* Add some space below the title */
+  font-weight: bold;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  padding: 1em;
+}
+
+.nav-item:hover {
+  background-color: #2f4858;
+}
+
+/* Styles for smaller screens */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-items {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    text-align: center;
+    padding: 1em 0 1em 0;
+    width: 100%;
+  }
+
+  .title {
+    text-align: center;
+    margin-bottom: 1em; /* Add some space below the title */
+  }
+}
