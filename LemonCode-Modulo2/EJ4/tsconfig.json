@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "./TS/out", // Directorio de salida para el código JS transpilado
+    "rootDir": "./TS", // Directorio raíz donde se encuentran tus archivos TS
+    "strict": true,
+    "module": "commonjs",
+    "target": "es6"
+  },
+  "include": ["TS/**/*"] // Incluye todos los archivos TS dentro del directorio TS
+}
